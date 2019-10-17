@@ -196,47 +196,47 @@ function getScore() {
 
     const process = [
         {
-            question: "what is the capital of australia?",
+            question: "What is the capital of australia?",
             validator: australia,
             points: 100
         },
         {
-            question: "what is the capital of canada?",
+            question: "What is the capital of canada?",
             validator: canada,
             points: 100
         },
         {
-            question: `what is "${word1}" in all capital letters?`,
+            question: `What is "${word1}" in all capital letters?`,
             meta: [word1],
             validator: uppercase,
             points: 200
         },
         {
-            question: `what are the first three letters of "${word2}"?`,
+            question: `What are the first three letters of "${word2}"?`,
             meta: [word2],
             validator: firstThreeLetters,
             points: 200
         },
         {
-            question: `what is ${number1} squared?`,
+            question: `What is ${number1} squared?`,
             meta: [number1],
             validator: squared,
             points: 200
         },
         {
-            question: `what is ${number2} multiplied by ${number3}?`,
+            question: `What is ${number2} multiplied by ${number3}?`,
             meta: [number2, number3],
             validator: multiplication,
             points: 300
         },
         {
-            question: `if someone was born in ${birthYear} and already has had their birthday this year, how old are they (assuming it's ${currentYear})?`,
+            question: `If someone was born in ${birthYear} and already has had their birthday this year, how old are they (assuming it's ${currentYear})?`,
             meta: [currentYear, birthYear],
             validator: age,
             points: 300
         },
         {
-            question: `which of ${number4} and ${number5} is larger (if they're the same then pick that number)?`,
+            question: `Which of ${number4} and ${number5} is larger (if they're the same then pick that number)?`,
             meta: [number4, number5],
             validator: larger,
             points: 300
